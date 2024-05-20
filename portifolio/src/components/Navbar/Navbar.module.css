@@ -1,17 +1,22 @@
 @import '../../vars.css';
 
+.header{
+    box-shadow: 0 0 14px rgb(0 0 0 / 22%);
+    font-family: var(--font-poppings);
+}
+
 .navbar{
     position:relative;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
+    padding: 2rem 0 1rem 0;
     z-index: 2;
     margin: 0 10%;
 }
 
 .title{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
@@ -23,12 +28,16 @@
 
 .menuItems{
     display: flex;
-    gap: 47px;
+    gap: 2rem;
     list-style-type: none; 
+}
+.menuBtn{
+    display: none;
 }
 
 .menuItems a{
-    font-size: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--color-text);
     text-decoration: none;
 }
