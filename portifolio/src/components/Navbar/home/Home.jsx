@@ -16,7 +16,7 @@ export const Hero = () =>{
                 </div>
             
                 <aside className={Styles.skillsSection}>
-                        <div><p>Tech Stack | </p></div>
+                        <div><p>Tech Stack</p></div>
                         <ul className={Styles.skillsIcons}>
                             <li><img src={getImageUrl("icons/HTML.svg")} alt="stack" /></li>
                             <li><img src={getImageUrl("icons/CSS.svg")} alt="stack" /></li>

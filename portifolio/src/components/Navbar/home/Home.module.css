@@ -70,8 +70,10 @@
     font-weight: 600;
     margin-top: 2rem;
 }
-
-
+.skillsSection p{
+    border-right: 2px solid rgb(45, 46, 50);
+    padding-right: 0.5rem;
+}
 .skillsIcons{
     list-style-type: none;
     display: flex;
@@ -110,7 +112,7 @@
         margin: 0rem 0% 2rem 0%;
     }
     .title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 1.5rem;
         line-height: 2.5rem;
     }
@@ -121,7 +123,6 @@
         justify-content: center;
     }
     .description{
-        width: 20rem;
         text-align: center;
 
     }
@@ -131,15 +132,22 @@
         margin-top: 5rem;
     }
     .skillsSection {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
+        flex-direction: column;
+        position: static;
+    }
+    .skillsSection p{
+        border-bottom: 2px solid rgba(45, 46, 50, .5);
+        color: rgba(45, 46, 50, .5);
+        border-right: none;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        padding-bottom: 1rem;
+        padding-right: 0;
     }
     .skillsIcons li img {
-        height: 1.5rem;
+        height: 3rem;
         transition: all .3s ease-in-out;
-        width: 2rem;
+        width: 4rem;
         cursor: pointer;
     }
 

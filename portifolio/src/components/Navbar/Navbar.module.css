@@ -76,18 +76,24 @@
     .menuBtn{
         display: block;
         cursor: pointer;
+        z-index: 5;
     }
     .menuItems{
         display: none;
         flex-direction: column;
-        align-items: flex-start;
-        align-items: baseline;
-        gap: 13px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
         border-radius: 10px;
-        background-color:rgb(105, 13, 39);
-        background: linear-gradient(145deg, #f7efe7, #d0c9c2);
-        padding: 24px 33px;
-        box-shadow: 20px 20px 60px #c4beb8, -20px -20px 60px #fffff8
+        background-color:var(--color-pink);
+        padding: 2rem;
+        width: 50vw;
+    }
+    .menuItems a{
+        color: white;
+    }
+    .menuItens a:hover{
+        color: black;
     }
     .menuOpen{
         display: flex;
