@@ -1,0 +1,147 @@
+@import "../../../vars.css";
+
+.mainHome{
+    background-color:#F9F9F9 ;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    z-index: 1;
+    margin: 0rem 10% 2rem 10%;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text);
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+.title{
+    font-size:4rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(
+        90deg,
+        var(--color-text) 30%,
+        rgba(255,255,255,0) 120%
+    );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+
+}
+
+.heroImg{ 
+    -webkit-animation: moove 8s ease-in-out infinite;
+    animation: moove 8s ease-in-out infinite;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid var(--color-pink);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 25rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes moove{
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+
+.skillsSection{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+.skillsIcons{
+    list-style-type: none;
+    display: flex;
+}
+.skillsIcons li img{
+    height: 2.5rem;
+    transition: all .3s ease-in-out;
+    width: 3.5rem;
+    cursor: pointer;
+}
+.skillsIcons li img:hover{
+    padding-bottom: 0.3rem;
+}
+
+@media screen and (max-width:1174px){
+    .title {
+        font-size: 3rem;
+    }
+    .heroImg {
+        height: 20rem;  
+    }
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+        z-index: 1;
+        margin: 0rem 5% 2rem 5%;
+    }
+    
+
+}
+@media screen and (max-width:830px){
+    .container{
+        margin: 0rem 0% 2rem 0%;
+    }
+    .title {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .description{
+        width: 20rem;
+        text-align: center;
+
+    }
+    .content{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .skillsSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .skillsIcons li img {
+        height: 1.5rem;
+        transition: all .3s ease-in-out;
+        width: 2rem;
+        cursor: pointer;
+    }
+
+}
+    

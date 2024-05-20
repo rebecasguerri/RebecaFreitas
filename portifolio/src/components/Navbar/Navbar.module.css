@@ -1,8 +1,11 @@
 @import '../../vars.css';
 
 .header{
-    box-shadow: 0 0 14px rgb(0 0 0 / 22%);
-    font-family: var(--font-poppings);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    background-color: white;
 }
 
 .navbar{
@@ -10,16 +13,22 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 0.7rem 0;
     z-index: 2;
-    margin: 0 10%;
+    margin: 0 2%;
 }
 
 .title{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
     text-decoration: none;
+    font-family: var(--font-poppings);
+    font-weight: 900;
     color: var(--color-text);
+    display: flex;
+
+}
+.difColor{
+    color: #F21B54;
 }
 
 .menu{
@@ -33,13 +42,21 @@
 }
 .menuBtn{
     display: none;
+    width:30px;
+    height:30px;
+    fill: #F21B54; 
 }
 
 .menuItems a{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: var(--color-text);
+    font-family: var(--font-poppings);
     text-decoration: none;
+}
+.menuItems a:hover{
+    color: var(--color-pink);
+    transition-duration: 0.3s;
 }
 
 @media screen and (max-width:830px){
@@ -50,7 +67,6 @@
     .menu{
         position: absolute;
         right: 0;
-        margin-right: 10%;
         flex-direction: column;
         align-items: flex-end;
         gap:11px;
@@ -69,13 +85,9 @@
         gap: 13px;
         border-radius: 10px;
         background-color:rgb(105, 13, 39);
-        background: linear-gradient(
-            0deg, 
-            rgb(105, 13, 39, 0.2) 0%, 
-            rgb(105, 13, 39, 1)100%
-        );
+        background: linear-gradient(145deg, #f7efe7, #d0c9c2);
         padding: 24px 33px;
-        box-shadow: 20px 20px 60px #380413b2, -20px -20px 60px #4c0619;
+        box-shadow: 20px 20px 60px #c4beb8, -20px -20px 60px #fffff8
     }
     .menuOpen{
         display: flex;

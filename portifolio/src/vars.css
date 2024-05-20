@@ -1,11 +1,12 @@
 :root{
     /*Colours*/
-    --color-text: #3f3c3c;
+    --color-text: black;
     --color-bg: #FFFF;
     --color-primary:#fdf5e6;
     --color-secondary:#E8B298;
     --color-dark:#290001;
+    --color-pink:#F21B54;
 
     /*fonts*/
-    --font-poppings:"poppins";
+    --font-poppings:"poppins", sans-serif;
 }
