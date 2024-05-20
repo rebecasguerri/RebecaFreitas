@@ -1,8 +1,8 @@
 import React from "react" 
-import {AiOutlineLinkedin} from "react-icons/ai"
-import { AiOutlineGithub } from "react-icons/ai"
+//import {AiOutlineLinkedin} from "react-icons/ai"
+//import { AiOutlineGithub } from "react-icons/ai"
 import Styles from "../home/Home.module.css"
-import { getImageUrl } from "../../utils";
+import { getImageUrl } from "../../../utils";
 export const Hero = () =>{
     return (
         <section className={Styles.container}>
@@ -12,7 +12,7 @@ export const Hero = () =>{
                 <aside>
                     <div><p>Tech Stack | </p></div>
                     <ul>
-                        <li><img src={getImageUrl("icons/icons")} alt="" /></li>
+                        <li><img src={getImageUrl("icons/icons/HTML.svg")} alt="stack" /></li>
                         <li></li>
                         <li></li>
                     </ul>
