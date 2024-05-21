@@ -1,0 +1,11 @@
+@import "../../vars.css";
+
+
+
+.iconsContainer{
+    display: flex;
+    gap: 1rem;
+}
+.iconSocial{
+    width: 30px;
+}

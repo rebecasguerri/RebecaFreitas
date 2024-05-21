@@ -1,0 +1,24 @@
+@import "../../vars.css";
+
+.AboutSection{
+    margin: 7rem 10% 2rem 10%;
+    padding: 2rem;
+}
+.article{
+    
+    border-radius: 1rem;;
+    padding: 2rem;
+}
+.titlePink{
+    font-weight: 900;
+    color: var(--color-pink);
+    margin-bottom: 1rem;
+}
+.title{
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+}
+.apresentation{
+    width: 30rem;
+    color: rgba(0, 0, 0, 0.733);
+}

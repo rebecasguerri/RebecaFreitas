@@ -1,4 +1,4 @@
-@import "../../../vars.css";
+@import "../../vars.css";
 
 .mainHome{
     background-color:#F9F9F9 ;
@@ -37,6 +37,9 @@
     -webkit-background-clip: text;
 
 }
+.description{
+    margin-bottom: 1rem;
+}
 
 .heroImg{ 
     -webkit-animation: moove 8s ease-in-out infinite;
@@ -69,10 +72,12 @@
     align-items: center;
     font-weight: 600;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 .skillsSection p{
     border-right: 2px solid rgb(45, 46, 50);
     padding-right: 0.5rem;
+    font-weight: 500;
 }
 .skillsIcons{
     list-style-type: none;

@@ -1,8 +1,7 @@
 import React from "react" 
-//import {AiOutlineLinkedin} from "react-icons/ai"
-//import { AiOutlineGithub } from "react-icons/ai"
-import Styles from "../home/Home.module.css"
-import { getImageUrl } from "../../../utils";
+import Styles from "./Home.module.css"
+import { getImageUrl } from "../../utils";
+import { ContactsIcons } from "../contactsIcons/ContactsIcons";
 export const Hero = () =>{
     return (
         <main className={Styles.mainHome}>
@@ -11,6 +10,7 @@ export const Hero = () =>{
                     <article className={Styles.article}>
                         <h1 className={Styles.title}>Front-End React <br/> Developer</h1>
                         <p className={Styles.description}>Hi, i´m Rebeca Freitas. A passionate Front-end Developer <br/>based in Bahia, Brazil 📍 </p>
+                        <ContactsIcons />
                     </article>
                     <img className={Styles.heroImg}  src={getImageUrl("devPic/profile-pic.png")} alt="dev-image"  />
                 </div>
