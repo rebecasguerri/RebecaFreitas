@@ -1,9 +1,10 @@
 import React from "react"
 import styles from "./About.module.css"
+import { getImageUrl } from "../../utils";
 export const About = ()=>{
     return(
     <section className={styles.AboutSection}>
-
+        <img src={getImageUrl("about/code.jpg")} alt="" className={styles.img} />
         <article className={styles.article}>
             <p className={styles.titlePink}>ABOUT ME</p>
             <h1 className={styles.title}>Front-end Developer based in Bahia, Brazil 📍</h1>

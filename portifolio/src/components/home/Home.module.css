@@ -7,9 +7,9 @@
     background: var(--color-bg);       
   }
   body::-webkit-scrollbar-thumb {
-    background-color: white;    
+    background-color: black;    
     border-radius: 20px;       
-    border: 4px solid black;  
+    border: 2px solid var(--color-bg);  
   }
 .mainHome{
     background-color:var(--color-bg);
@@ -146,7 +146,7 @@
     .content{
         flex-direction: column-reverse;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     .skillsSection {
         flex-direction: column;
