@@ -1,7 +1,18 @@
 @import "../../vars.css";
 
+  body::-webkit-scrollbar {
+    width: 12px;             
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--color-bg);       
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    
+    border-radius: 20px;       
+    border: 4px solid black;  
+  }
 .mainHome{
-    background-color:#F9F9F9 ;
+    background-color:var(--color-bg);
 }
 .container{
     position: relative;
@@ -47,7 +58,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid var(--color-pink);
+    box-shadow: 10px 10px 30px #c4beb883, -10px -10px 30px #fffff85e;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     height: 25rem;
     position: relative;
@@ -78,6 +89,7 @@
     border-right: 2px solid rgb(45, 46, 50);
     padding-right: 0.5rem;
     font-weight: 500;
+    color: var(--color-text);
 }
 .skillsIcons{
     list-style-type: none;

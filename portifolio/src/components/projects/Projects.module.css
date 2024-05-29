@@ -2,7 +2,54 @@
 
 
 .projectsMain{
-    background-color:#F9F9F9 ;
-    padding: 15rem 0 ;
-    text-align: center;
+    background-color:var(--color-bg);
+    padding: 5rem 0 ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    color:var(--color-text);
+}
+.projectContainer{
+    background-color: black;
+    margin: 2rem 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: rgba(72, 72, 124, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.img{
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.article{
+    border-left: 2px solid white;
+    width: 100%;
+    padding-left: 1rem;
+}
+.title{
+    margin-bottom: 1rem;
+}
+.description{
+    color:var(--color-text);
+}
+.listIcons{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Icons a{
+    color: white;
+}
+.Icons svg{
+    width: 2em;
+    height: 2em;
 }

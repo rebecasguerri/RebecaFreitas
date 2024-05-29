@@ -3,6 +3,8 @@
 .AboutSection{
     margin: 7rem 10% 2rem 10%;
     padding: 2rem;
+    color: var(--color-text);
+    background-color: black;
 }
 .article{
     
@@ -11,7 +13,6 @@
 }
 .titlePink{
     font-weight: 900;
-    color: var(--color-pink);
     margin-bottom: 1rem;
 }
 .title{
@@ -20,5 +21,4 @@
 }
 .apresentation{
     width: 30rem;
-    color: rgba(0, 0, 0, 0.733);
 }

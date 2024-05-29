@@ -9,3 +9,18 @@
 .iconSocial{
     width: 30px;
 }
+.listIcons{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Icons{
+    color: white;
+}
+.Icons svg{
+    width: 2em;
+    height: 2em;
+}
