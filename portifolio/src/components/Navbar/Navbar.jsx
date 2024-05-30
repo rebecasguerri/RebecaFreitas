@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
+import {BrowserRouter} from "react-router-dom"
+import {HashLink as Link} from "react-router-hash-link"
+
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <header className={styles.header}>
+            <BrowserRouter>
             <nav className={styles.navbar}>
                 <a className={styles.title} href='/'>Rebeca.<div className={styles.difColor}>dev</div></a>
                 <div className={styles.menu}>
@@ -22,20 +27,21 @@ export const Navbar = () => {
                         onClick={() => setMenuOpen(false)}
                     >
                         <li>
-                            <a href='#home'>Home</a>
+                            <Link to='#home' className={styles.listItem}>Home</Link>
                         </li>
                         <li>
-                            <a href='#about'>About</a>
+                            <Link to='#about' className={styles.listItem}>Sobre</Link>
                         </li>
                         <li>
-                            <a href='#projects'>Projects</a>
+                            <Link to='#projects' className={styles.listItem}>Projetos</Link>
                         </li>
                         <li>
-                            <a href='#contact'>Contact</a>
+                            <Link to='#contact' className={styles.listItem}>Contato</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
+            </BrowserRouter>
         </header>
     );
 }

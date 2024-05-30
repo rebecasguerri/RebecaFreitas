@@ -3,12 +3,14 @@ import styles from "./About.module.css"
 import { getImageUrl } from "../../utils";
 export const About = ()=>{
     return(
-    <section className={styles.AboutSection}>
-        <img src={getImageUrl("about/code.jpg")} alt="" className={styles.img} />
+    <section className={styles.AboutSection} id="about">
+        <img src={getImageUrl("/about/about.jpg")} alt="" className={styles.img} />
         <article className={styles.article}>
-            <p className={styles.titlePink}>ABOUT ME</p>
-            <h1 className={styles.title}>Front-end Developer based in Bahia, Brazil 📍</h1>
-            <p className={styles.apresentation}>Hi, I'm Rebeca Freitas, a front-end developer passionate about creating intuitive and appealing interfaces. With experience in HTML, CSS, JavaScript, and modern frameworks like React. <br/> <br/>I strive to deliver the best user experience. I am dedicated to transforming ideas into functional and aesthetically pleasing digital products.
+            <p className={styles.titlePink}>SOBRE MIM</p>
+            <h1 className={styles.title}>Front-end Developer based in Bahia-Brasil 📍</h1>
+            <p className={styles.apresentation}>
+            <span>Apaixonada pela criação de experiências de usuário envolventes e intuitivas. Trago um forte desejo de aprender e evoluir constantemente no campo do desenvolvimento Front-End. <br/></span>
+            <span className={styles.apresentation2}>Com uma base sólida em HTML, CSS, JavaScript, React e Git, aliada a um espírito proativo e uma sede insaciável de conhecimento, estou disposta a enfrentar qualquer desafio para transformar ideias em realidade digital.</span>
             </p>
         </article>
       </section>

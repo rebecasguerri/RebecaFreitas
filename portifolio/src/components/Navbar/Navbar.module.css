@@ -42,17 +42,19 @@
     display: none;
     width:30px;
     height:30px;
-    fill: #F21B54; 
 }
 
-.menuItems a{
+.listItem{
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-text);
     font-family: var(--font-poppings);
     text-decoration: none;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
 }
-.menuItems a:hover{
+.listItem:hover{
     color: #47474A;
     transition-duration: 0.3s;
 }
@@ -77,24 +79,29 @@
         z-index: 5;
     }
     .menuItems{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 50px;
-        border-radius: 10px;
-        background-color:var(--color-pink);
         padding: 2rem;
-        width: 50vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        transition: 1s;
+        transform: translateX(-100vw);
+
     }
-    .menuItems a{
+    .listItem{
         color: white;
     }
-    .menuItens a:hover{
+    .listItem:hover{
         color: black;
     }
     .menuOpen{
-        display: flex;
-        z-index: 1;
+        transform: none;
     }
 }

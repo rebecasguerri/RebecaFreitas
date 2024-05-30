@@ -6,7 +6,7 @@ import { IoIosLogOut } from "react-icons/io";
 
 export const Projects = () => {
     return(
-        <section className={styles.projectsMain}>
+        <section className={styles.projectsMain} id="projects">
             <div className={styles.projectContainer}>
                 <img src={getImageUrl("devPic/profile-pic.png")} alt="project-image" className={styles.img}/>
 

@@ -5,7 +5,7 @@ import { ContactsIcons } from "../contactsIcons/ContactsIcons";
 export const Hero = () =>{
     return (
         <main className={Styles.mainHome}>
-            <section className={Styles.container}>
+            <section className={Styles.container} id="home">
                 <div className={Styles.content}>
                     <article className={Styles.article}>
                         <h1 className={Styles.title}>Front-End React <br/> Developer</h1>

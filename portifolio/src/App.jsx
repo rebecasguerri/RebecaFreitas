@@ -1,3 +1,4 @@
+
 import styles from './App.module.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
@@ -12,15 +13,15 @@ function App() {
   return(
     <div className={styles.App}>
       <Navbar />
-      <Hero/>
+      <Hero />
       <ScrollAnimation animateIn="fadeIn">
-      <About/>
+      <About />
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn">
      <Projects />
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn">
-     <Contact/>
+     <Contact />
      </ScrollAnimation>
       <Footer/>
     </div>

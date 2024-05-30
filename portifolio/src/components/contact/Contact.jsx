@@ -5,7 +5,7 @@ import { CiMail } from "react-icons/ci";
 
 export const Contact = () => {
     return(
-        <section className={styles.contactMain}>
+        <section className={styles.contactMain} id="contact">
             <p className={styles.titlePink}>CONTACT </p>
             <h1></h1>
             <div className={styles.contactContent}>
