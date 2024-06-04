@@ -15,7 +15,7 @@
     display: none;
     background-color: black;
     margin: 2rem 0;
-    width: 50%;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,3 +56,27 @@
     width: 2em;
     height: 2em;
 }
+
+@media screen and  (max-width:830px){
+    .projectContainer{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .article {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column; 
+    }
+}
+
+

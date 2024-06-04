@@ -14,3 +14,12 @@
     font-weight: 400;
     color: var(--color-text);
 }
+
+@media screen and  (max-width:830px){
+    .footer{
+        margin: 7rem 0% 0rem 0%;
+        padding: .9rem 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+        align-items: center;
+    }
+}
