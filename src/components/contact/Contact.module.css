@@ -1,55 +1,50 @@
 @import "../../vars.css";
 
+.contactMain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7rem 10% 2rem 10%;
+  color: var(--color-text);
+}
+.titlePink {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.contactInfo h3 {
+  font-weight: 400;
+}
+.contactContent {
+  display: flex;
+  gap: 2rem;
+}
+.contactIconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.iconSocial {
+  width: 30px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+  color: #ffff;
+}
 
-.contactMain{
+@media screen and (max-width: 830px) {
+  .contactMain {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
-    margin: 7rem 10% 2rem 10%;
+    margin: 7rem 0% 2rem 0%;
     color: var(--color-text);
-}
-.titlePink{
-    font-weight: 900;
-    margin-bottom: 1rem;
-}
-.contactInfo h3{
-    font-weight: 400;
-}
-.contactContent{
+  }
+  .contactContent {
     display: flex;
     gap: 2rem;
-}
-.contactIconBox{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-.Icons{
-    width: 30px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
-}
-.Icons svg{
-    color: #ffff;
-}
-
-@media screen and  (max-width:830px){
-
-    .contactMain{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        margin: 7rem 0% 2rem 0%;
-        color: var(--color-text);
-    }
-    .contactContent{
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
-    }
+    flex-direction: column;
+  }
 }

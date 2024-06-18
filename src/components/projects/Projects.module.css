@@ -1,82 +1,82 @@
 @import "../../vars.css";
 
+.projectsMain {
+  background-color: var(--color-bg);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  color: var(--color-text);
+}
+.projectContainer {
+  display: none;
+  background-color: black;
+  margin: 2rem 0;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: rgba(72, 72, 124, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.img {
+  width: 10rem;
+  margin-right: 2rem;
+}
 
-.projectsMain{
-    background-color:var(--color-bg);
-    padding: 5rem 0 ;
+.article {
+  border-left: 1px solid rgba(255, 255, 255, 0.411);
+  padding-left: 1rem;
+}
+.title {
+  margin-bottom: 1rem;
+  font-size: 1em;
+}
+.description {
+  color: var(--color-description);
+  font-size: 0.9em;
+}
+.listIcons {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Icons a {
+  color: white;
+}
+.Icons svg {
+  width: 2em;
+  height: 2em;
+}
+
+@media screen and (max-width: 830px) {
+  .projectContainer {
+    width: 90vw;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
-    color:var(--color-text);
-}
-.projectContainer{
-    display: none;
-    background-color: black;
-    margin: 2rem 0;
-    width: 50vw;
+    flex-direction: column;
+  }
+  .article {
+    border: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid hsla(0, 0%, 100%, .1);
-    border-radius: 0.5rem ;
-    padding: 2rem;
-    box-shadow: rgba(72, 72, 124, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-}
-.img{
-    width: 10rem;
-    margin-right: 2rem;
-}
-
-.article{
-    border-left: 2px solid white;
-    width: 100%;
-    padding-left: 1rem;
-}
-.title{
-    margin-bottom: 1rem;
-}
-.description{
-    color:var(--color-description);
-}
-.listIcons{
-    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
 }
-
-.Icons a{
-    color: white;
-}
-.Icons svg{
-    width: 2em;
-    height: 2em;
-}
-
-@media screen and  (max-width:830px){
-    .projectContainer{
-        width: 90vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .article {
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .contact{
-        display: flex;
-        gap: 2rem;
-        flex-direction: column; 
-    }
-}
-
-
