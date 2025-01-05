@@ -78,6 +78,10 @@
     flex-direction: column;
     gap: 0.5em;
   }
+  ._description_lzchs_51 {
+    text-align: center;
+    font-size: 0.9rem;
+  }
   .article {
     padding: 1rem;
   }
